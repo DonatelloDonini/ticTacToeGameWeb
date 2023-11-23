@@ -1,0 +1,69 @@
+:root{
+  --backgorund: #613DC1;
+  --container: #2C0735;
+  --accent: #858AE3;
+  --details: #4E148C;
+  --text: #97DFFC;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--backgorund);
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  padding: 2rem;
+  background-color: var(--container);
+}
+
+#message{
+  margin: 2rem;
+  font-size: 24px;
+  color: var(--container);
+  font-weight: bold;
+}
+
+#restartButton:hover{
+  background-color: var(--details);
+  color: white;
+}
+
+#restartButton{
+  all: initial;
+  width: 200px;
+  margin: 2rem auto;
+  background-color: var(--container);
+  text-align: center;
+  color: var(--text);
+  padding: 1rem;
+  border-radius: 1000px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.board {
+  background-color: var(--container);
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 48px;
+  cursor: pointer;
+  background-color: var(--details);
+  line-height: 100px;
+}
+.cell:hover {
+  background-color: var(--accent);
+}
